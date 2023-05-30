@@ -25,6 +25,10 @@ header{
     align-items: center;
 }
 
+.skills{
+    flex-wrap: nowrap;
+}
+
 footer{
     margin: auto;
     justify-content: space-between;
@@ -53,23 +57,23 @@ footer > section:first-child{
         gap: 1rem;
     }
 
-    .main > section{
+    .feature > a > section, .main > section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         gap: 2rem;
     }
 
-    .main > section:nth-child(even) > .content{
+    .feature > a > section:nth-child(even) > .content{
         grid-column: 2 / span 2;
     }
 
-    .main > section:nth-child(even) > .pj_image{
+    .feature > a > section:nth-child(even) > .pj_image{
         grid-column: 1 / span 1;
         grid-row: 1 / 1;
     }
 
-    .main > section > .pj_image{
+    .feature > a > section > .pj_image{
     }
     
     footer > *{
