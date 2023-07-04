@@ -190,8 +190,12 @@ header>.hero {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+a.btn{
+    color: #262626;
+}
+
 .btn:hover {
-    color: #fff;
+    color: #f8f9fa;
     background-color: #262626;
     border-color: #262626;
 }
@@ -207,6 +211,36 @@ header>.hero {
 }
 
 .btn:focus {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.btn-dark {
+    
+    border: 3px solid #f8f9fa;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+a.btn-dark{
+    color: #f8f9fa;
+}
+
+.btn-dark:hover {
+    color: #262626;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-dark:visited {
+    color: #615e76;
+    border-color: #615e76;
+}
+
+.btn-dark:active {
+    background-color: #393f45;
+    border-color: #393f45;
+}
+
+.btn-dark:focus {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
@@ -253,12 +287,12 @@ section.default_color {
 }
 
 section.dark {
-    color: #fff;
+    color: #f8f9fa;
     background-color: #262626;
 }
 
 section.primary {
-    /* color: #fff; */
+    /* color: #f8f9fa; */
     /* background-color: #595857; */
     color: #212529;
     background-color: #D9D9D9;
@@ -290,8 +324,15 @@ section.primary {
     list-style-type: disclosure-closed;
 }
 
-.pj_thumbnail{
+.btn-feature-detail{
+    cursor: pointer;
 
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+
+    color: inherit;
+    text-decoration: underline;
 }
 
 .content {
@@ -319,7 +360,7 @@ section.primary {
 }
 
 .feature_pj_1 {
-    color: #fff;
+    color: #f8f9fa;
     background-color: rgb(40, 44, 65);
     background-image: url("../image/pjcover_ichoice.png");
     animation-name: feature_pj_1;
@@ -425,6 +466,54 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* --------------- Detail Pages ---------------*/
+
+#detail{
+    text-align: center;
+}
+
+#detail nav .container{
+    justify-content: center;
+}
+
+#detail main{
+    max-width: 1200px;
+    width: 80vw;
+    margin: 5rem auto;
+}
+
+#detail header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+
+    text-align: left;
+    margin: 5rem 0;
+}
+
+.img-responsive{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto
+}
+
+.img-responsive{
+    margin-top: 1rem;
+}
+
+#detail .cta{
+    margin-top: 10rem;
+    padding: 5rem;
+    background-color: #D9D9D9;
+}
+
+#detail .dark{
+    background-color: #000;
+    color: #f8f9fa;
 }
 
 /* --------------- Media Query ---------------*/
